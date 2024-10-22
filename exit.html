@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HH-EXIT</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Redirect after 1 minute (60000 milliseconds)
+        setTimeout(function() {
+            window.location.href = "index.html"; // Change this to your desired URL
+        }, 60000); // 60000 milliseconds = 1 minute
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 3/5 of the screen with stacked divs -->
+        <div class="content-3-5">
+            <div class="box box1">
+                <div class="header">
+                    <h1>Hätäpoistumisen tapahtuessa!</h1>
+                    <img src="images/FI.png" alt="finnish flag">
+                </div>
+                <div class="instructions">
+                    <p>1. Kun kuulet hälytysäänimerkin, pysy rauhallisena ja valmistaudu evakuoimaan.</p>
+                    <p>2. Tunne evakuointireittisi ja hätäpoistumistiet. Älä käytä hissiä evakuoinnin aikana.</p>
+                    <p>3. Siirry rauhallisesti ulos ja keräänny turvalliselle etäisyydelle rakennuksesta.</p>
+                    <p>4. Ilmoita puuttuvista henkilöistä pelastushenkilöstölle.</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="header">
+                    <h1>In case of an emergency evacuation!</h1>
+                    <img src="images/GB.png" alt="great britain flag">
+                </div>
+                <div class="instructions">
+                    <p>1. When you hear the alarm, stay calm and prepare to evacuate.</p>
+                    <p>2. Know your evacuation route and emergency exits. Do not use the elevator during evacuation.</p>
+                    <p>3. Move outside calmly and gather at a safe distance from the building.</p>
+                    <p>4. Report any missing persons to the emergency personnel.</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="half full-height">
+                    <img src="images/pohja-exit.png" alt="floor plan">
+                </div>
+                <div class="half stack">
+                    <div class="stacked-div">
+                        <div><img src="images/exit.png" alt="aed symbol"></div>
+                    </div>
+                    <div class="stacked-div">
+                        <div class="green">
+                            <p>Etsi käytäviltä hätäpoistumismerkit, jotka löytyvät seiniltä ja ovien läheisyydestä.</p>
+                        </div>
+                        <div class="blue">
+                            <p>Look for emergency exit signs in the corridors, which are located on the walls and near doors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2/5 of the screen -->
+        <div class="content-2-5">
+            <div class="quarter-section">
+               <div class="image-container"> <img src="images/hh-exit.png" style="padding: 20px" alt=""></div>
+            </div>
+            <div class="three-quarters-section">
+                <div class="video-wrapper">
+                    <iframe 
+                        class="mobile-iframe" 
+                        src="https://www.youtube.com/embed/ZFqLhvSYiKA?autoplay=1&mute=1&loop=1&playlist=ZFqLhvSYiKA" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
