@@ -82,7 +82,7 @@ img {
   .stack {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .stacked-div {
@@ -100,6 +100,11 @@ img {
 
   .blue p {
     color: #0079C2;
+    font-weight: bold;
+  }
+
+  .green p {
+    color: #13A961;
     font-weight: bold;
   }
 
@@ -134,14 +139,14 @@ img {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 667px; /* Take full height of the parent container */
+    height: 600px; /* Take full height of the parent container */
     overflow: hidden; /* Prevent overflow */
     
 }
 
 .mobile-iframe {
-    width: 375px; /* Width of a typical mobile device */
-    height: 667px; /* Height of a typical mobile device */
+    width: 338px; /* Width of a typical mobile device */
+    height: 600px; /* Height of a typical mobile device */
     border: 1px solid #ccc; /* Optional: Add a border to simulate a phone frame */
     border-radius: 16px; /* Optional: Rounded corners */
     overflow: hidden; /* Ensure no overflow */
