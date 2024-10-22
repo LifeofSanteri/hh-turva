@@ -157,6 +157,10 @@ img {
         font-size: 2.5rem;
     }
 
+        .content-3-5 {
+        padding: 0px;      /* Change to row layout on larger screens */
+      }
+
     .video-wrapper {
         height: 480px; /* Adjust height for smaller screens */
     }
