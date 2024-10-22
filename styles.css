@@ -112,14 +112,14 @@ img {
 .content-2-5 {
     display: flex;               /* Use Flexbox to arrange the child divs */
     flex-direction: column;      /* Stack the child divs vertically */
-    width: 100%;                 /* Full width of the parent container */
+    width: fit-content;           
   }
   
   .quarter-section {
     display: flex;
 
     flex: 1;                     /* 1/4 of the space */
-    padding: 20px; 
+    padding: 0px; 
     padding-bottom: 0px;             /* Padding for content spacing */
   }
   
@@ -127,7 +127,7 @@ img {
     display: flex;
     margin: 0px;
     flex: 3;                     /* 3/4 of the space */
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .video-wrapper {
@@ -136,7 +136,7 @@ img {
     align-items: center; /* Center vertically */
     height: 667px; /* Take full height of the parent container */
     overflow: hidden; /* Prevent overflow */
-    padding: 0px 36px 36px; /* Optional: Add some padding */
+    
 }
 
 .mobile-iframe {
@@ -157,10 +157,6 @@ img {
         font-size: 2.5rem;
     }
 
-    .content-3-5 {
-        padding: 0px;      /* Change to row layout on larger screens */
-      }
-
     .video-wrapper {
         height: 480px; /* Adjust height for smaller screens */
     }
@@ -168,6 +164,11 @@ img {
     .container {
         grid-template-columns: 1fr; /* Single column on smaller screens */
     }
+
+    .content-3-5 {
+        padding: 0px;      /* Change to row layout on larger screens */
+      }
+
     .content-2-5 {
         flex-direction: column;      /* Change to row layout on larger screens */
       }
