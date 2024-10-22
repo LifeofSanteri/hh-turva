@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #0079C2;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%; /* Prevents image from exceeding its container */
+    height: auto;    /* Maintains the aspect ratio */
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header {
+    display: flex;                 /* Use Flexbox to arrange elements */
+    flex-direction: row;       /* Stack items vertically */
+    align-items: center;          /* Center items horizontally */
+    width: 100%;                  /* Fill the full width of the container */
+    justify-content: space-between;
+    max-width: 1000px;
+
+  }
+
+/* Container for the grid */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* 3/5 and 2/5 split */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Style for the 3/5 section */
+.content-3-5 {
+    display: flex;
+    flex-direction: column; /* Stack the divs vertically */
+    justify-content: space-evenly; /* Align items to the top */
+    padding: 24px;
+}
+
+/* Stacked divs inside 3/5 */
+.content-3-5 .box {
+    width: 100%; /* Ensure the boxes take full width */
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    font-size: 1.5rem;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.box3 {
+    display: flex;
+  }
+  
+  .half {
+    padding: 24px;
+  }
+  
+  .full-height {
+    
+  }
+  
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .stacked-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px ; /* Optional: Adds some space between the divs */
+    max-width: 350px;
+    gap: 12px;
+  }
+
+  .red p {
+    color: #A92121;
+    font-weight: bold;
+  }
+
+  .blue p {
+    color: #0079C2;
+    font-weight: bold;
+  }
+
+.instructions p {
+    margin: 4px 0;
+    font-size: 1.2rem;
+}
+
+/* Style for the 2/5 section */
+.content-2-5 {
+    display: flex;               /* Use Flexbox to arrange the child divs */
+    flex-direction: column;      /* Stack the child divs vertically */
+    width: 100%;                 /* Full width of the parent container */
+  }
+  
+  .quarter-section {
+    display: flex;
+
+    flex: 1;                     /* 1/4 of the space */
+    padding: 20px; 
+    padding-bottom: 0px;             /* Padding for content spacing */
+  }
+  
+  .three-quarters-section {
+    display: flex;
+    margin: 0px;
+    flex: 3;                     /* 3/4 of the space */
+    justify-content: flex-start;
+  }
+
+  .video-wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 667px; /* Take full height of the parent container */
+    overflow: hidden; /* Prevent overflow */
+    padding: 0px 36px 36px; /* Optional: Add some padding */
+}
+
+.mobile-iframe {
+    width: 375px; /* Width of a typical mobile device */
+    height: 667px; /* Height of a typical mobile device */
+    border: 1px solid #ccc; /* Optional: Add a border to simulate a phone frame */
+    border-radius: 16px; /* Optional: Rounded corners */
+    overflow: hidden; /* Ensure no overflow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+    margin: 20px auto; /* Center the iframe */
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .content-2-5 {
+        flex-direction: column;      /* Change to row layout on larger screens */
+      }
+    
+      .quarter-section {
+        flex: 1;                   /* 1/4 of the space */
+      }
+    
+      .three-quarters-section {
+        flex: 3;    
+        justify-content: center;           /* 3/4 of the space */
+      }
+
+      .box3 {
+        flex-direction: column;
+      }
+    
+}
