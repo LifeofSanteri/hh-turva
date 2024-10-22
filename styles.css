@@ -152,6 +152,15 @@ img {
 
 /* Responsive styling for smaller screens */
 @media (max-width: 1000px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .video-wrapper {
+        height: 480px; /* Adjust height for smaller screens */
+    }
+    
     .container {
         grid-template-columns: 1fr; /* Single column on smaller screens */
     }
@@ -161,7 +170,8 @@ img {
     
       .quarter-section {
         flex: 1;                   /* 1/4 of the space */
-      }
+        justify-content: center;
+    }
     
       .three-quarters-section {
         flex: 3;    
@@ -171,5 +181,19 @@ img {
       .box3 {
         flex-direction: column;
       }
+      .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 12PX;
+      }
     
+      .mobile-iframe {
+        width: 270px; /* Width of a typical mobile device */
+        height: 480px; /* Height of a typical mobile device */
+        border: 1px solid #ccc; /* Optional: Add a border to simulate a phone frame */
+        border-radius: 16px; /* Optional: Rounded corners */
+        overflow: hidden; /* Ensure no overflow */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+        margin: 20px auto; /* Center the iframe */
+    }
 }
