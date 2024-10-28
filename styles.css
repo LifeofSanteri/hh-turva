@@ -10,11 +10,41 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.button {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.blue {
+  color: #0079C2;
+}
+
+.red-text {
+  color: #A92121;
+}
+
 p {
     margin: 0;
     font-size: 1rem;
     color: black;
     font-weight: bold;
+    padding: 2px;
 }
 
 img {
@@ -74,10 +104,12 @@ img {
   .half {
     padding: 24px;
   }
-  
-  .full-height {
-    
+
+  .half-stack {
+   gap: 12px;
   }
+  
+
   
   .stack {
     display: flex;
@@ -115,8 +147,9 @@ img {
 
 /* Style for the 2/5 section */
 .content-2-5 {
-    display: flex;               /* Use Flexbox to arrange the child divs */
-    flex-direction: column;      /* Stack the child divs vertically */
+    display: flex;               
+    flex-direction: column;   
+    justify-content: center;  
     width: fit-content;           
   }
   
